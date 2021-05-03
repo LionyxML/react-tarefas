@@ -1,14 +1,15 @@
 import PropTypes from 'prop-types'
 import Button from './Button'
 
-const Header = (props) => {  //Pode desestruturar com {{ title }} e usar {title} direto
-  const onClick = () => {
-    console.log('Click')
-  }
+const Header = ({ title, onAdd, showAdd }) => {
   return (
     <header className="header">
-      <h1>{props.title}</h1>
-      <Button color='green' text='Adicionar' onClick={onClick}/>
+      <h1>{title}</h1>
+      <Button
+        color={showAdd ? 'red' : 'green'}
+        text={showAdd ? 'Fechar' : 'Adicionar'}
+        onClick={onAdd}
+        />
     </header>
   )
 }

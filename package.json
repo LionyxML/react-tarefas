@@ -11,7 +11,7 @@
     "react-icons": "^4.2.0",
     "react-scripts": "4.0.3",
     "web-vitals": "^1.0.1",
-    "homepage": "http://lionyxml.github.io/react-tarefas/build"
+    "homepage": "https://lionyxml.github.io/react-tarefas/"
   },
   "scripts": {
     "start": "react-scripts start",
